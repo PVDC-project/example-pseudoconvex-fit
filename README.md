@@ -6,7 +6,7 @@ Three main types of functions are used for the approximation:
 - a cubic function, with coefficient constraints described in [this paper](https://ieeexplore.ieee.org/document/8302960)
 - a polynomial function of arbitrary order
 
-For a generic polynomial function, the pseudoconvexity constraints are imposed following the approach described [here](https://yalmip.github.io/example/polynomialdesign/), which is based on sum-of-squares programming.
+For a generic polynomial function, the pseudoconvexity constraints are imposed following the approach described [here](https://yalmip.github.io/example/polynomialdesign/), which is based on [sum-of-squares programming](https://www.princeton.edu/~aaa/Public/Teaching/ORF523/ORF523_Lec15.pdf).
 
 The fitting problem is formulated and solved using [YALMIP](https://yalmip.github.io/).
 
