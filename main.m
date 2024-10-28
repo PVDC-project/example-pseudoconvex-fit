@@ -68,3 +68,5 @@ switch test_id
 end
 
 plot_test(test_data)
+
+plot_total_loss(test_data)
