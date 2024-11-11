@@ -19,7 +19,8 @@ end
 m = 3;  % order of the multiplier s(x) in p(x) = s(x)*g(x)
 [s,c] = polynomial(x,m);
 g = x;
-constraints = [sos(s), sos(dp-s*g)];
+s_eps = 0.1;  % a lower bound on the gradient
+constraints = [sos(s-s_eps), sos(dp-s*g)];
 options = [];
 decision_vars = [a;c];
 [sol,~,~,res] = solvesos(constraints, objective, options, decision_vars);
