@@ -11,7 +11,7 @@ dp = jacobian(p,x);
 objective = 0;
 for k = 1:length(X)
     e = replace(p,x,X(k)) - Y(k);
-    objective = objective + e^2;
+    objective = objective + e'*e;
 end
 
 % use sum-of-squares reformulation to ensure positivity of the gradient
